@@ -1,0 +1,92 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: url("./img/bg.jpg");
+    color: color;
+}
+
+
+.tarjeta-de-perfil {
+    width: 600px;
+    background: white;
+    margin: 50px auto;
+    padding: 20px
+}
+
+.tarjeta-de-perfil .caja-de-informacion{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.tarjeta-de-perfil .caja-de-informacion .bio .botones{
+    display: flex;
+    justify-content: space-between;
+} 
+.tarjeta-de-perfil .caja-de-informacion .bio .botones div{
+    width: 48%
+} 
+.tarjeta-de-perfil .caja-de-informacion .bio .botones button{
+    width: 100%;
+    display: block;
+} 
+.tarjeta-de-perfil .caja-de-informacion .foto-de-perfil{
+    position: relative;
+    width: 30%;
+    height: 187px;
+
+} 
+.tarjeta-de-perfil .caja-de-informacion .foto-de-perfil .foto{
+    position: absolute;
+    width: 100%;
+    border-radius: 50%;
+}
+.tarjeta-de-perfil .caja-de-informacion .foto-de-perfil .icono-de-imagen{
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    opacity: 0.9;
+    outline: none;
+    
+}
+
+
+.tarjeta-de-perfil .caja-de-informacion .bio{
+    width: 65%;
+} 
+
+
+.caja-de-publicaciones .publicacion {
+    display: grid;
+    grid-template-areas: "foto nombre nombre"
+                         "foto contenido contenido"
+                         "foto fecha fecha";
+    grid-template-columns: 10% 90%;
+    grid-column-gap: 2px;
+}
+
+.caja-de-publicaciones .publicacion .foto{
+    grid-area: foto;
+    width: 50px;
+    height: 50px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    
+    border-radius: 50%;
+}
+.caja-de-publicaciones .publicacion .nombre{
+    grid-area: nombre;
+}
+.caja-de-publicaciones .publicacion .contenido{
+    grid-area: contenido;
+}
+.caja-de-publicaciones .publicacion .fecha{
+    grid-area: fecha;
+    text-align: right;
+}
+
